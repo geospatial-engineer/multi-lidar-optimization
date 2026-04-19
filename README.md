@@ -28,14 +28,6 @@ The stylesheet is `assets/styles.css`.
 
 The MATLAB code is stored under `code/`.
 
-## How to publish with GitHub Pages
-
-Create a new GitHub repository and upload the full contents of this folder.
-
-In the repository settings, open the Pages section and set the source to deploy from the main branch root.
-
-Once Pages is enabled, GitHub will publish `index.html` automatically.
-
 ## Citation
 
 If you use this repository in academic work, please cite the associated manuscript and, if available, the repository archive DOI.
