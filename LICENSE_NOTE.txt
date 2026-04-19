@@ -1,0 +1,2 @@
+Choose and add your preferred open-source license before publishing.
+Common choices are MIT, BSD-3-Clause, or GPL-3.0, depending on how permissive you want the reuse terms to be.

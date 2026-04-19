@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Symmetric Multi-LiDAR Optimization | MATLAB Code Release</title>
+  <meta name="description" content="MATLAB code release for mixed discrete–continuous constrained optimization of symmetric multi-LiDAR mount configurations using Bayesian Optimization, Genetic Algorithm, and Particle Swarm Optimization." />
+  <link rel="stylesheet" href="assets/styles.css" />
+</head>
+<body>
+  <header class="hero">
+    <div class="container">
+      <p class="eyebrow">MATLAB code release</p>
+      <h1>Symmetric Multi-LiDAR Mount Configuration Optimization</h1>
+      <p class="lead">
+        This repository contains the optimization code used to study mixed discrete–continuous, symmetry-constrained
+        multi-LiDAR placement for mobile mapping systems. The implementation includes Bayesian Optimization, Genetic
+        Algorithm, and Particle Swarm Optimization workflows for OS1-64 dual-sensor configuration search.
+      </p>
+      <div class="cta-row">
+        <a class="button primary" href="./code/">Browse code files</a>
+        <a class="button secondary" href="README.md">Open README</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="section">
+      <div class="container grid two">
+        <article class="card">
+          <h2>What is included</h2>
+          <p>
+            The release provides three MATLAB implementations corresponding to the three optimizer families discussed in the manuscript:
+            Bayesian Optimization, Genetic Algorithm, and Particle Swarm Optimization. Each workflow evaluates candidate LiDAR mount
+            configurations through trajectory-based voxel simulation, overlap regularization, and angular-diversity scoring.
+          </p>
+          <div class="code-list">
+            <a href="code/optimize_OS1_BO.m"><code>optimize_OS1_BO.m</code></a>
+            <a href="code/optimize_OS1_GA.m"><code>optimize_OS1_GA.m</code></a>
+            <a href="code/optimize_OS1_PSO.m"><code>optimize_OS1_PSO.m</code></a>
+          </div>
+        </article>
+
+        <article class="card">
+          <h2>Problem setting</h2>
+          <p>
+            The optimization problem combines a discrete decision on the number of master sensors with continuous decisions on mount
+            position and orientation. Symmetry is enforced by mirroring master sensors across the YZ plane, while optional fixed-roll
+            constraints reduce dimensionality and reflect a practical mounting assumption for backpack-like platforms.
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section alt">
+      <div class="container grid three">
+        <article class="card small">
+          <h3>Bayesian Optimization</h3>
+          <p>
+            Surrogate-guided search using evaluation-efficient exploration for computationally expensive voxel-based objective functions.
+          </p>
+        </article>
+        <article class="card small">
+          <h3>Genetic Algorithm</h3>
+          <p>
+            Population-based search using crossover, mutation, and elitism to explore nonconvex multi-sensor layout configurations.
+          </p>
+        </article>
+        <article class="card small">
+          <h3>Particle Swarm Optimization</h3>
+          <p>
+            Swarm-based continuous search with convergence monitoring and optional hybrid local refinement.
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container grid two">
+        <article class="card">
+          <h2>Suggested repository citation</h2>
+          <p>
+            If you use this code in academic work, please cite the associated manuscript and, if you create a DOI-enabled Zenodo archive,
+            cite the archived software release as well.
+          </p>
+          <pre class="snippet">Author(s). Symmetric Multi-LiDAR Mount Configuration Optimization: MATLAB Code Release. GitHub repository.</pre>
+        </article>
+
+        <article class="card">
+          <h2>Notes</h2>
+          <p>
+            This page is intentionally code-focused. If you are sharing only the source files, you can still publish a clean and professional
+            GitHub Pages site by keeping the repository lightweight and pointing visitors directly to the MATLAB implementations and README.
+          </p>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <p>Prepared as a lightweight GitHub Pages site for direct repository upload.</p>
+    </div>
+  </footer>
+</body>
+</html>
