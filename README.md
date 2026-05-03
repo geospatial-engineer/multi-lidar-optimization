@@ -2,6 +2,8 @@
 
 This repository contains MATLAB source code for mixed discrete–continuous optimization of symmetric multi-LiDAR mount configurations for mobile mapping systems. The current release is code-only and focuses on the OS1-64 optimization workflows implemented with Bayesian Optimization, Genetic Algorithm, and Particle Swarm Optimization.
 
+
+
 ## Repository contents
 
 The main MATLAB entry points are stored in the `code/` directory.
