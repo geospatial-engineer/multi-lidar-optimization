@@ -1,8 +1,8 @@
 # Symmetric Multi-LiDAR Mount Configuration Optimization
 
 This repository contains MATLAB source code for mixed discrete–continuous optimization of symmetric multi-LiDAR mount configurations for mobile mapping systems. The current release is code-only and focuses on the OS1-64 optimization workflows implemented with Bayesian Optimization, Genetic Algorithm, and Particle Swarm Optimization.
-
-
+<img width="1008" height="760" alt="image" src="https://github.com/user-attachments/assets/5b3f036b-664b-4613-964f-b5cffd66d57a" />
+ 
 
 ## Repository contents
 
